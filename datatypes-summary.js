@@ -31,8 +31,15 @@ let myobj =  {
 
  //DATA TYPE OF ARR, FUNCT------> function
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
- //Stack memory (Premitive),  ex: String, Numbers, Boolean,
- //   Heap memory(non-premitive)   ex: Arrays, Objects, functions
+ //Stack memory (Premitive),  
+ // ex: String, Numbers, Boolean,
+//variable ko copy milti h....
+
+
+ //   Heap memory(non-premitive)   
+ // ex: Arrays, Objects, functions 
+ // direct reference milta h,,,(variable change to original val. change hoga)
 
  
