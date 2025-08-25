@@ -30,3 +30,9 @@ let myobj =  {
  }
 
  //DATA TYPE OF ARR, FUNCT------> function
+
+
+ //Stack memory (Premitive),  ex: String, Numbers, Boolean,
+ //   Heap memory(non-premitive)   ex: Arrays, Objects, functions
+
+ 
