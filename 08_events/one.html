@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML events</title>
+</head>
+
+<body style="background-color: rgb(42, 48, 40);">
+    <ul id="images">
+        <li><img width="200px" id="Forest" src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg" alt=""></li>
+        <li><img width="200px" id="Flower" src="https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg" alt=""></li>
+        <li><img width="200px" id="Water" src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg" alt=""></li>
+        <li><img width="200px" id="Bird" src="https://images.pexels.com/photos/36762/scarlet-honeyeater-bird-red-feathers.jpg" alt=""></li>
+        <li><a style="color: aliceblue;" href="https://www.google.com/" id=""google></a>Google</li>
+    </ul>
+</body>
+<script>  /////USE EVENT LISTENER INSTEAD OF alert
+    // document.getElementById("Bird").onclick = function(){
+    //     alert("Bird clicked!")
+    // }
+
+    //events---types, timestamp, defaultPrevented, target, toElement
+    // srcElement, currTarget, 
+    //clientX, clientY, screenX, screenY
+    //altKey. ctrlKey, shiftkey, keyCode
+
+    ///attachEvent()
+    //jQuery - .on listener
+
+    document.getElementById("Bird").addEventListener("click", function(e){
+        console.log(e);
+    }, false)
+
+
+</script>
+</html>
