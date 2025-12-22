@@ -13,7 +13,7 @@
         <li><img width="200px" id="Flower" src="https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg" alt=""></li>
         <li><img width="200px" id="Water" src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg" alt=""></li>
         <li><img width="200px" id="Bird" src="https://images.pexels.com/photos/36762/scarlet-honeyeater-bird-red-feathers.jpg" alt=""></li>
-        <li><a style="color: aliceblue;" href="https://www.google.com/" id=""google></a>Google</li>
+        <li><a style="color: aliceblue;" href="https://www.google.com/" id="google">Google</a></li>
     </ul>
 </body>
 <script>  /////USE EVENT LISTENER INSTEAD OF alert
@@ -29,10 +29,30 @@
     ///attachEvent()
     //jQuery - .on listener
 
-    document.getElementById("Bird").addEventListener("click", function(e){
-        console.log(e);
-    }, false)
+    // document.getElementById("images").addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");
+    // }, false)
 
+    // document.getElementById("Bird").addEventListener("click", function(e){
+    //     console.log("owl clicked");
+    //     e.stopPropagation()
+    // }, false)
+
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     e.preventDefault()
+    //     e.stopPropagation()
+    //     console.log("google clicked");
+    // })
+
+    document.querySelector('#images').addEventListener
+    ('click', function(e){
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()            
+        }        
+    })
 
 </script>
 </html>
